@@ -12,7 +12,7 @@ This should go without saying 😂
 
 ### Vuex 4
 
-The team has just finished upgrading it to Vue 3 and the APIs stay the same. However they are some plans for future APIs so there may be beraking changes later on.
+The team has just finished upgrading it to Vue 3 and the APIs stay the same. However they are some plans for future APIs so there may be breaking changes later on.
 
 [Vuex 4](https://github.com/vuejs/vuex/tree/4.0)
 
