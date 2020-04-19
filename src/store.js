@@ -1,6 +1,6 @@
-const state = {
+const state = () => ({
   storeCounter: 0,
-};
+});
 
 export const mutations = {
   incrementCounter(state) {
