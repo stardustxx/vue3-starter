@@ -1,4 +1,4 @@
-# Vue 3 Starer Project
+# Vue 3 Starter Project
 
 As Vue 3 beta just came out, its final release is around the corner. Many people, including me, are eager to know what has changed and how to create project with it
 

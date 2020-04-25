@@ -76,7 +76,6 @@ module.exports = env => {
       new VueLoaderPlugin(),
     ],
     optimization: isProd ? optimization : {},
-    watch: isProd ? true : false,
     devServer: {
       hot: true,
       stats: "minimal",
