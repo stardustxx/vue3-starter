@@ -1,14 +1,14 @@
-const state = () => ({
+const state = {
   storeCounter: 0,
-});
+};
 
-export const mutations = {
+const mutations = {
   incrementCounter(state) {
     state.storeCounter++;
   },
 };
 
-export default {
+export const store = {
   state,
   mutations,
 };

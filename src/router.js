@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Page1 from "./pages/Page1.vue";
 
-const router = createRouter({
+export const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
@@ -21,5 +21,3 @@ router.beforeEach((to, from, next) => {
   console.log({to, from});
   next();
 });
-
-export default router;
