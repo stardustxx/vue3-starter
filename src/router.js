@@ -14,6 +14,11 @@ export const router = createRouter({
       name: "page2",
       component: () => import(/* webpackChunkName: "Page2" */ "./pages/Page2.vue"),
     },
+    {
+      path: "/pageQuery",
+      name: "pageQuery",
+      component: () => import(/* webpackChunkName: "PageQuery" */ "./pages/PageQuery.vue"),
+    },
   ],
 });
 

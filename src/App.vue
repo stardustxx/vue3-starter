@@ -5,6 +5,7 @@
     <div class="nav">
       <router-link to="/">Vuex Store Page</router-link>
       <router-link to="/page2">Composition API Page</router-link>
+      <router-link to="/pageQuery">GraphQL Page</router-link>
     </div>
 
     <router-view></router-view>
