@@ -26,7 +26,7 @@ module.exports = env => {
   
   return {
     mode: isProd ? "production" : "development",
-    devtool: isProd ? "source-map" : "cheap-module-eval-source-map",
+    devtool: isProd ? "source-map" : "eval-source-map",
     entry: path.resolve(__dirname, "src/index.js"),
     output: {
       path: path.resolve(__dirname, "./dist"),
@@ -44,6 +44,9 @@ module.exports = env => {
             "vue-style-loader",
             {
               loader: "css-loader",
+              options: {
+                esModule: false,
+              }
             },
             {
               loader: "postcss-loader",
@@ -53,6 +56,9 @@ module.exports = env => {
             },
             {
               loader: "sass-loader",
+              options: {
+                implementation: require('sass'),
+              },
             },
           ],
         },
