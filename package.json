@@ -14,7 +14,7 @@
     "graphql": "15.3.0",
     "regenerator-runtime": "0.13.7",
     "vue": "3.0.0",
-    "vue-router": "4.0.0-beta.10",
+    "vue-router": "4.0.0-beta.11",
     "vuex": "4.0.0-beta.4"
   },
   "devDependencies": {
@@ -29,10 +29,10 @@
     "postcss-scss": "2.1.1",
     "sass": "1.26.11",
     "sass-loader": "10.0.2",
-    "terser-webpack-plugin": "4.2.1",
+    "terser-webpack-plugin": "4.2.2",
     "vue-loader": "16.0.0-beta.7",
     "vue-style-loader": "4.1.2",
-    "webpack": "5.0.0-beta.32",
+    "webpack": "5.0.0-rc.0",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
   }
