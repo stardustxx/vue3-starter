@@ -14,16 +14,14 @@ let optimization = {
         },
       },
       extractComments: false,
-      cache: true,
       parallel: true,
-      sourceMap: true,
     }),
   ],
 };
 
-module.exports = env => {
-  const isProd = JSON.parse(env.production);
-  
+module.exports = (env) => {
+  const isProd = env.production ? JSON.parse(env.production) : false;
+
   return {
     mode: isProd ? "production" : "development",
     devtool: isProd ? "source-map" : "eval-source-map",
@@ -37,54 +35,48 @@ module.exports = env => {
       rules: [
         {
           test: /\.(css|sass|scss)$/,
-          include: [
-            path.resolve(__dirname, "./src"),
-          ],
+          include: [path.resolve(__dirname, "./src")],
           use: [
             "vue-style-loader",
             {
               loader: "css-loader",
               options: {
                 esModule: false,
-              }
+              },
             },
             {
               loader: "postcss-loader",
               options: {
-                parser: "postcss-scss",
+                postcssOptions: {
+                  parser: "postcss-scss",
+                },
               },
             },
             {
               loader: "sass-loader",
               options: {
-                implementation: require('sass'),
+                implementation: require("sass"),
               },
             },
           ],
         },
         {
           test: /\.vue$/,
-          include: [
-            path.resolve(__dirname, "./src")
-          ],
+          include: [path.resolve(__dirname, "./src")],
           use: ["vue-loader"],
         },
         {
           test: /\.js$/,
-          include: [
-            path.resolve(__dirname, "./src"),
-          ],
+          include: [path.resolve(__dirname, "./src")],
           use: ["babel-loader"],
         },
         {
           test: /\.(jpg)$/,
-          use: ['file-loader']
-        }
+          use: ["file-loader"],
+        },
       ],
     },
-    plugins: [
-      new VueLoaderPlugin(),
-    ],
+    plugins: [new VueLoaderPlugin()],
     optimization: isProd ? optimization : {},
     devServer: {
       hot: true,
