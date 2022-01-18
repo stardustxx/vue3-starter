@@ -5,7 +5,7 @@
     <div>
       <button @click="incrementCounter">Increment</button>
 
-      Store counter: {{storeCounter}}
+      Store counter: {{ storeCounter }}
     </div>
   </div>
 </template>
@@ -20,11 +20,6 @@ export default {
   },
   computed: {
     ...mapState(["storeCounter"]),
-  }
-}
-
+  },
+};
 </script>
-
-<style lang="scss">
-
-</style>
