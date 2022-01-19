@@ -1,6 +1,6 @@
 # Vue 3 Starter Project
 
-As Vue 3 beta just came out, its final release is around the corner. Many people, including me, are eager to know what has changed and how to create project with it
+Vue 3 has been out for some time now and many people, including me, are eager to know what has changed and how to create project with it
 
 ## How to start
 
@@ -14,9 +14,13 @@ yarn
 yarn dev
 ```
 
-This will start a webpack dev server on local that you can play with.
+This will start a Vite server on local that you can play with.
 
 ## What does it include
+
+### [Vite](https://vitejs.dev/)
+
+The build tool
 
 ### [Vue 3](https://github.com/vuejs/vue-next)
 
