@@ -10,16 +10,14 @@
   "author": "Eric",
   "license": "ISC",
   "dependencies": {
-    "@apollo/client": "3.5.7",
-    "@vitejs/plugin-vue": "2.0.1",
-    "graphql": "16.2.0",
+    "@vitejs/plugin-vue": "2.3.1",
     "postcss-nested": "5.0.6",
-    "vite": "2.7.13",
-    "vue": "3.2.27",
-    "vue-router": "4.0.12",
+    "vite": "2.9.5",
+    "vue": "3.2.33",
+    "vue-router": "4.0.14",
     "vuex": "4.0.2"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "3.2.27"
+    "@vue/compiler-sfc": "3.2.33"
   }
 }
