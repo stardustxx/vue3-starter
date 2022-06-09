@@ -10,14 +10,14 @@
   "author": "Eric",
   "license": "ISC",
   "dependencies": {
-    "@vitejs/plugin-vue": "2.3.1",
+    "@vitejs/plugin-vue": "2.3.3",
     "postcss-nested": "5.0.6",
-    "vite": "2.9.5",
-    "vue": "3.2.33",
-    "vue-router": "4.0.14",
+    "vite": "2.9.10",
+    "vue": "3.2.37",
+    "vue-router": "4.0.15",
     "vuex": "4.0.2"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "3.2.33"
+    "@vue/compiler-sfc": "3.2.37"
   }
 }
