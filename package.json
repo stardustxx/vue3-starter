@@ -12,7 +12,7 @@
   "dependencies": {
     "@vitejs/plugin-vue": "2.3.3",
     "postcss-nested": "5.0.6",
-    "vite": "2.9.10",
+    "vite": "2.9.13",
     "vue": "3.2.37",
     "vue-router": "4.0.15",
     "vuex": "4.0.2"
