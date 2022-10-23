@@ -13,22 +13,12 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import useCounter from "../compositions/useCounter";
 import VueImage from "../components/VueImage.vue";
 import godcode from "../assets/godcode.jpg";
 
-export default {
-  name: "Page2",
-  components: {
-    VueImage,
-  },
-  setup() {
-    const { counter, incrementCounter } = useCounter();
-
-    return { counter, incrementCounter, godcode };
-  },
-};
+const { counter, incrementCounter } = useCounter();
 </script>
 
 <style lang="postcss" scoped>
